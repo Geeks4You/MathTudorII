@@ -71,7 +71,7 @@ void Simplemath::getInput()
 	int numberInput2 = 0;
 	for (int i = 1; i <= num_calc; i++)
 	{
-		cout << "Number set " << i << endl;
+		cout << "Problem # " << i << endl;
 		cout << "Please enter the 1st number between " << minNum << " - " << maxNum << "\n";
 		cin >> numberInput1;
 		while (numberInput1 < 0 || numberInput1 > 9999)
@@ -100,11 +100,9 @@ class Addition :public Simplemath{
 public:
 	Addition()
 	{
-		//Simplemath();
-		//setNumCalc();
 		cout << getNumCalc() << " ";
 		result = new int[getNumCalc()];
-		cout.width(40); cout << "PERFORM ADDITION!" << endl;
+		cout.width(40); cout << "Perform Addition!" << endl;
 		cout.width(44); cout << "-----------------\n\n" << endl;
 		setMinMax(0, 9999);
 	}
@@ -123,7 +121,7 @@ public:
 	{
 		int size = getNumCalc();
 		cout << "------------------------\n\n";
-		cout << "Addition problem results:\n" << endl;
+		cout << "Addition results:\n" << endl;
 		for (int i = 1; i <= size; i++)
 		{
 			cout << setw(12) << getInputArray1(i) << endl;
@@ -142,7 +140,7 @@ public:
 	{
 		cout << getNumCalc() << " ";
 		result = new int[getNumCalc()];
-		cout.width(43); cout << "PERFORM SUBTRACTION!" << endl;
+		cout.width(43); cout << "Perform Subtraction!" << endl;
 		cout.width(47); cout << "--------------------\n\n" << endl;
 		setMinMax(0, 9999);
 	}
@@ -161,7 +159,7 @@ public:
 	{
 		int size = getNumCalc();
 		cout << "------------------------\n\n";
-		cout << "Subtraction problem results:\n" << endl;
+		cout << "Subtraction results:\n" << endl;
 		for (int i = 1; i <= size; i++)
 		{
 
@@ -182,7 +180,7 @@ public:
 	{
 		cout << getNumCalc() << " ";
 		result = new int[getNumCalc()];
-		cout.width(46); cout << "PERFORM MULTIPLICATION!" << endl;
+		cout.width(46); cout << "Perform Multiplication!" << endl;
 		cout.width(50); cout << "-----------------------\n\n" << endl;
 		setMinMax(0, 9999);
 	}
@@ -201,7 +199,7 @@ public:
 	{
 		int size = getNumCalc();
 		cout << "------------------------\n\n";
-		cout << "Multiplication problem results:\n" << endl;
+		cout << "Multiplication results:\n" << endl;
 		for (int i = 1; i <= size; i++)
 		{
 			cout << setw(12) << getInputArray1(i) << endl;
@@ -220,7 +218,7 @@ public:
 	{
 		cout << getNumCalc() << " ";
 		result = new double[getNumCalc()];
-		cout.width(40); cout << "PERFORM DIVISION!" << endl;
+		cout.width(40); cout << "Perform Division!" << endl;
 		cout.width(44); cout << "-----------------\n\n" << endl;
 		setMinMax(1, 9999);
 	}
@@ -240,7 +238,7 @@ public:
 	{
 		int size = getNumCalc();
 		cout << "------------------------\n\n";
-		cout << "Division problem results:\n" << endl;
+		cout << "Division results:\n" << endl;
 		for (int i = 1; i <= size; i++)
 		{
 
@@ -259,7 +257,7 @@ int displayMenu();
 int _tmain(int argc, _TCHAR* argv[])
 {
 	int goodbye = 0;
-	cout << "Welcome to Math Tutor II program!\n" << endl;
+	cout << "Welcome to SimpleMath OO Program!\n" << endl;
 	do
 	{
 		int option = displayMenu();
@@ -298,7 +296,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			break;
 		}
 		case 5:
-			cout << "Thank you for using the Math Tutor II program.\n" << endl;
+			cout << "Thank you for using the SimpleMath OO Program.\n" << endl;
 			goodbye = -1;
 			break;
 		}
@@ -315,7 +313,7 @@ int displayMenu()
 	int option;//variable to hold user's selection
 	do
 	{
-		cout.width(55); cout << setw(25) << "" << "MATH TUTOR II PROGRAM" << endl;
+		cout.width(55); cout << setw(25) << "" << "SimpleMath OO PROGRAM" << endl;
 		cout.width(55); cout << setw(25) << "" << "---------------------" << endl;
 		cout << endl;
 		cout.width(50); cout << setw(25) << "" << "1) Addition" << endl;
